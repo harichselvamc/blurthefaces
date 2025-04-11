@@ -2,3 +2,5 @@ opencv-python
 mtcnn
 tensorflow
 numpy
+sphinx
+sphinx-rtd-theme

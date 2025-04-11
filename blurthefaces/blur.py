@@ -3,6 +3,17 @@ import numpy as np
 from .detector import FaceDetector
 
 def blur_faces(image: np.ndarray, blur_depth: int = 75):
+    """
+    Blurs detected faces in the input image using MTCNN and Gaussian Blur.
+
+    Parameters:
+        image (np.ndarray): The input image in BGR format.
+        blur_depth (int): Intensity of the Gaussian blur. Default is 75.
+
+    Returns:
+        np.ndarray: The image with blurred faces.
+        str: Error message if no image or faces are detected.
+    """
     if image is None or image.size == 0:
         return "Image not found"
 
